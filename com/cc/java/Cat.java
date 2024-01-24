@@ -8,12 +8,19 @@ public class Cat {
         System.out.println("we build a cat");
         furColor = "black";
     }
-    public void SayHello () {
+    public void sayHello () {
         System.out.println("Miau "+"my color is " +this.furColor);
     }
-    public void tellyourName (){
-        System.out.println(this.name);
+    public String tellyourName (){
+      return name;
     }
+    public String tellYourFurColor(){
+        return this.furColor;
+    }
+    public int tellyourAge (){
+        return this.age;
+    }
+
     public void tellYourAddress(){
         System.out.println(this);
     }

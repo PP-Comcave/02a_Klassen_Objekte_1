@@ -16,7 +16,7 @@ public class App {
         System.out.println(cat.age);
         System.out.println(cat.furColor);
 
-        cat.SayHello();
+        cat.sayHello();
         cat.tellYourAddress();
         Cat cat2 = new Cat();
 
@@ -25,13 +25,17 @@ public class App {
         cat2.age = 29;
 
 
+        output("-----");
+        output(String.valueOf(cat2.tellyourAge()));
+        output("-----");
 
-        System.out.println(cat2.name);
-        System.out.println(cat2.age);
-        System.out.println(cat2.furColor);
+        output(cat2.tellyourName());
+        output(cat2.tellYourFurColor());
 
-        cat2.SayHello();
+        cat2.sayHello();
         cat2.tellYourAddress();
+       System.out.println(cat2.tellyourName());
+
     /*
           cat2.tellYourAddress();
         cat2.tellyourName();
@@ -39,7 +43,9 @@ public class App {
     }
     //test
 
-   
+   public static void output(String output_String){
+        System.out.println(output_String);
+   }
 
 }
 
